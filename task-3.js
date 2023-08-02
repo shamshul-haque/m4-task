@@ -51,12 +51,6 @@ for (var i = 0; i < bookPrice.length; i++) {
   console.log(bookPrice[i]);
 }
 
-/* Typecasting and fixed floating point */
-var p = "10";
-var q = 20;
-console.log(p + " " + q);
-console.log(parseInt(p) + " " + parseFloat(q).toFixed(2));
-
 var arr = [5, 10, 15, 20, 25];
 /* Find the value of an index */
 console.log(arr[3]);
@@ -97,3 +91,13 @@ if (X > 80000) {
 } else {
   console.log("Give nothing");
 }
+
+/* Typecasting and fixed floating point */
+var p = "10";
+var q = 20.098;
+console.log(p);
+console.log(q);
+console.log(parseInt(p));
+console.log(parseFloat(q).toFixed(2));
+var r = p + q;
+console.log(r);
