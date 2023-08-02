@@ -24,7 +24,7 @@ while (oddNumber <= 633) {
 
 /* Declare an array for all the topic you have learned last few days and display them as output */
 var learnedTopic = ["html", "css", "tailwind css", "daisy ui", "java script"];
-console.log(learnedTopic);
+console.log("I learned", learnedTopic);
 
 /* Create an array of mobile that are you used and display them by while loop*/
 var usedPhone = ["symphony", "techno", "samsung", "nokia", "redme"];
@@ -93,11 +93,24 @@ if (X > 80000) {
 }
 
 /* Typecasting and fixed floating point */
-var p = "10";
-var q = 20.098;
+var p = "10.321";
 console.log(p);
+var q = parseFloat(p);
+q = Number(q.toFixed(2));
 console.log(q);
-console.log(parseInt(p));
-console.log(parseFloat(q).toFixed(2));
-var r = p + q;
+var r = parseInt(q);
 console.log(r);
+console.log(q + r);
+
+/* Ternary Operator */
+var age = 25;
+age >= 18
+  ? console.log("You are eligible for license")
+  : console.log("You are not adult");
+/* Ternary for nested condition */
+var hasLicense = false;
+age >= 18
+  ? hasLicense == true
+    ? console.log("Adult with license")
+    : console.log("Adult but has no license")
+  : console.log("You are not adult");

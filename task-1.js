@@ -12,7 +12,7 @@ var chemistry = 65;
 var physics = 80;
 var bangla = 35.45;
 var avgMark = (99.5 + 75.25 + 65 + 80 + 35.45) / 5;
-console.log(avgMark.toFixed(2));
+console.log(Number(avgMark.toFixed(2)));
 
 /* Jhon's teacher gave him two variables. each variable contains a string. Jhon's teacher asked him to combine these two string and print them in one line. Help Jhon to write the program */
 var firstVariable = "I am going to be";
