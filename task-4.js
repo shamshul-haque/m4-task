@@ -41,17 +41,18 @@ result = oddEven(number);
 console.log(result);
 
 /* You are hurry to go to your school on time. But when you are crossing the road, the traffic signal is red. In this situation, if you try to cross the road you may be in danger. if you noticed yellow signal, you should stop and if you noticed green signal you can cross the road. Now write a program for the situation */
-function crossRoad(color) {
-  if (color === "red") {
-    return "You are in danger";
-  } else if (color === "yellow") {
-    return "You should stop";
-  } else if (color === "green") {
-    return "You can cross the road";
-  } else {
-    return "Do whatever you want";
-  }
+
+const signal = "green";
+switch (signal) {
+  case "red":
+    console.log("You are in danger");
+    break;
+  case "yellow":
+    console.log("You should stop");
+    break;
+  case "green":
+    console.log("You can cross the road");
+    break;
+  default:
+    console.log("Do whatever you want");
 }
-const signal = "yellow";
-result = crossRoad(signal);
-console.log(result);
